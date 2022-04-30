@@ -1,4 +1,18 @@
 # Data Migration from Postgresql to MySQL
+
+# 1. Sync psql table to mysql
+
+# Read data from psql table and write it to mysql using pandas dataframe
+# Source readonly
+# Table : beneficiaries
+# DB : beneficiary_db
+# psql_server = &quot;3.7.81.85&quot;
+# psql_username = &quot;dbreaduser&quot;
+# psql_password = &quot;DBPROD@read$#$&quot;
+# Destination :
+# setup mysql on localhost and write in beneficiary_db (create new db on localhost through code)
+
+
 import psycopg2 as pg
 import pandas as pd
 from sqlalchemy import create_engine
